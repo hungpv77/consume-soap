@@ -1,0 +1,31 @@
+#%RAML 0.8
+title: Get Weather
+version: 1.0.development
+baseUri: http://localhost:8081/api
+
+/GetWeather:
+  displayName: Get Weather Service
+  get:
+    description: Get Current Weather of City and Country
+    queryParameters:
+      CountryName:
+        description: Provide a country name.
+        required: true
+        example: "Malaysia"
+      CityName:
+        description: Provide a city name.
+        required: true
+        example: "Kuala Lumpur"
+    responses:
+      200:
+        body:
+          application/json:
+            schema: !include weather-schema.json
+            example: !include weather-example.json
+      400:
+        body:
+          application/json:
+            example: |
+              {
+                "message": "Data Not Found"
+              }

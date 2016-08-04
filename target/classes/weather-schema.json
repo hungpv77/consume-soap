@@ -1,0 +1,48 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "Location": {
+      "type": "string"
+    },
+    "Time": {
+      "type": "string"
+    },
+    "Wind": {
+      "type": "string"
+    },
+    "Visibility": {
+      "type": "string"
+    },
+    "SkyConditions": {
+      "type": "string"
+    },
+    "Temperature": {
+      "type": "string"
+    },
+    "DewPoint": {
+      "type": "string"
+    },
+    "RelativeHumidity": {
+      "type": "string"
+    },
+    "Pressure": {
+      "type": "string"
+    },
+    "Status": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "Location",
+    "Time",
+    "Wind",
+    "Visibility",
+    "SkyConditions",
+    "Temperature",
+    "DewPoint",
+    "RelativeHumidity",
+    "Pressure",
+    "Status"
+  ]
+}
